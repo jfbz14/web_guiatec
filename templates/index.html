@@ -1,0 +1,105 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block content %}
+  <section class="rounded-lg">
+    <div class="grid max-w-screen-xl px-4 py-4 mx-auto mb-4 lg:gap-8 xl:gap-0 lg:py-8 lg:grid-cols-12">
+      <div class="mx-auto place-self-center lg:col-span-7 ">
+        <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl dark:text-white text-center">SERVICIOS DE TECNOLOGÍA</h1>
+        <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 text-center">Transformamos su negocio con soluciones tecnologicas innovadoras.</p>
+        <div class="text-center">  
+          <a href="https://api.whatsapp.com/send/?phone=573052477600&text&type=phone_number&app_absent=0" target="_blank" 
+            class="inline-flex ml-8 px-5 py-3 text-base font-medium text-center text-white bg-green-600 border border-gray-300 rounded-lg hover:bg-green-800 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-green-700 dark:focus:ring-gray-800">
+              Contacto
+          </a> 
+        </div>
+      </div>
+      <div class="hidden lg:mt-0 lg:col-span-5 lg:flex p-4">
+        <img src="{% static 'logo/logo_m.png' %}" class="hidden dark:block" alt="logo" />                    
+        <img src="{% static 'logo/logo_m_dark.png' %}" class="btn-toggle dark:hidden" alt="logo" />
+
+      </div>                
+    </div>
+  </section>
+
+  <section class="bg-gray-200 dark:bg-gray-900 rounded-lg mb-8">  
+
+    <div class="p-1 mx-auto max-w-screen-xl">
+    
+      <div class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg px-4 py-2">
+        <p class="text-sm md:text-lg font-normal text-gray-500 dark:text-gray-200 text-justify">Nos apasiona la tecnología y estamos comprometidos a brindar soluciones innovadoras para mejorar la eficiencia de su negocio. Ofrecemos una amplia gama de servicios, desde el desarrollo de páginas web y aplicaciones hasta el soporte técnico en computadoras, redes y CCTV. Trabajamos en estrecha colaboración con nuestros clientes para entender sus necesidades y brindarles soluciones que se ajusten a sus objetivos y presupuesto.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class=" rounded-lg mb-8">
+
+    <div class="grid md:grid-cols-2 gap-8 mx-auto pt-8 mb-8">   
+      
+      <div class="max-w-md mx-auto bg-white border border-green-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        
+        <img class="rounded-t-lg" src="{% static 'logo/pb.jpg' %}" alt="" />
+        
+        <div class="px-4 py-2">
+            
+          <h2 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-800 dark:text-white">Desarrollo de Software</h2>
+          
+          <p class="mb-3 font-normal text-green-600 dark:text-gray-100">Diseñamos y desarrollamos sitios web, aplicaciones web y de escritorio a medida, con un enfoque en la experiencia del usuario.</p>
+          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-green-600 dark:hover:bg-green-800 dark:focus:ring-gray-800">
+            Más Información
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="max-w-md mx-auto bg-white border border-green-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        
+        <img class="rounded-t-lg" src="{% static 'logo/pb.jpg' %}" alt="" />
+        
+        <div class="px-4 py-2">
+            
+          <h2 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-800 dark:text-white">Soporte Técnico</h2>
+          
+          <p class="mb-3 font-normal text-green-600 dark:text-gray-100">Ofrecemos servicios de soporte técnico integral para computadoras, redes y CCTV para garantizar el funcionamiento óptimo de su tecnología.</p>
+          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-green-600 dark:hover:bg-green-800 dark:focus:ring-gray-800">
+            Más Información
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <section class=" rounded-lg py-8 mx-4">
+
+    <div class="mx-auto w-full bg-green-600 rounded-full p-4">
+        
+      <p class="text-sm md:text-lg font-normal text-white text-center">Nos esforzamos por mantener un alto nivel de satisfacción del cliente, ofreciendo soluciones personalizadas.</p>
+      
+    </div>
+  </section> 
+
+  <section class=" rounded-lg">
+
+    <div class="grid md:grid-cols-2 gap-8 mx-auto pt-8 mb-8">
+
+      <div class="bg-gray-50 dark:bg-gray-800 border border-yellow-400 dark:border-yellow-200 rounded-lg p-4 mx-4">
+        
+        <h3 class="text-gray-900 dark:text-white text-3xl text-center font-extrabold mb-2">Misión</h3>
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 text-justify mb-2">
+          Proporcionar servicios de desarrollo de software innovadores y servicios de soporte técnico especializados para ayudar a nuestros clientes a mantenerse a la vanguardia de la tecnología.</p>
+        
+      </div>
+        
+      <div class="bg-gray-50 dark:bg-gray-800 border border-spacing-4 border-yellow-400 dark:border-yellow-200 rounded-lg p-4 mx-4">
+          
+        <h3 class="text-gray-900 dark:text-white text-3xl text-center font-extrabold mb-2">Visión</h3>
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 text-justify mb-2">Ser una referencia en el desarrollo de software y servicios de soporte técnico, brindando soluciones tecnológicas integrales de alto rendimiento, para ayudar a nuestros clientes a alcanzar su máximo potencial.</p>
+        
+      </div>
+      
+    </div>
+    
+  </section>
+
+{% endblock content %}
