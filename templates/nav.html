@@ -4,7 +4,7 @@
 
     <div class="flex flex-wrap items-center justify-between mx-3 p-1 rounded-lg shadow-lg bg-green-200 dark:bg-green-600">
 
-        <a href="#" class="flex items-center ml-4">
+        <a href="{% url 'index' %}" class="flex items-center ml-4">
 
             <img src="{% static 'logo/logo.png' %}" class="h-14 mr-3 hidden dark:block" alt="logo" />                    
             <img src="{% static 'logo/logo_dark.png' %}" class="h-14 mr-3 btn-toggle dark:hidden" alt="logo" />
@@ -48,7 +48,7 @@
                             <a href="#" class="block p-2 text-green-800 hover:bg-green-800 hover:rounded rounded-lg hover:text-white md:hover:bg-green-800 md:hover:text-white md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-200 dark:hover:text-green-800">Desarrollo de Software</a>
                           </li>
                           <li>
-                            <a href="#" class="block p-2 text-green-800 hover:bg-green-800 hover:rounded rounded-lg hover:text-white md:hover:bg-green-800 md:hover:text-white md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-200 dark:hover:text-green-800">Soporte Tecnico de Computadoras</a>
+                            <a href="{% url 'technical_support' %}" class="block p-2 text-green-800 hover:bg-green-800 hover:rounded rounded-lg hover:text-white md:hover:bg-green-800 md:hover:text-white md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-200 dark:hover:text-green-800">Soporte Tecnico de Computadoras</a>
                           </li>
                           
                         </ul>
