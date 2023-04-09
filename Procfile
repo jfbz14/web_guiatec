@@ -1,0 +1,1 @@
+web: gunicorn web_guiatec.wsgi --log-file -
