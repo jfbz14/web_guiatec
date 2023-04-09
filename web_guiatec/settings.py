@@ -36,6 +36,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -131,3 +132,5 @@ COMPRESS_ROOT = BASE_DIR / 'static'
 COMPRESS_ENABLED = env('COMPRESS_ENABLED')
 
 STATICFILES_FINDERS = ("django.contrib.staticfiles.finders.AppDirectoriesFinder", 'compressor.finders.CompressorFinder',)
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
