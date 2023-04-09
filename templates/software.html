@@ -2,8 +2,9 @@
 {% load static %}
 
 {% block content %}
-  
+                             
     <section class="rounded-lg shadow-lg">
+
         <div class="grid max-w-screen-xl py-2 mx-auto mb-4 lg:gap-8 xl:gap-0 lg:py-4 lg:grid-cols-12">
             <div class="mx-auto place-self-center lg:col-span-7 ">
                 <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl dark:text-white text-center">Desarrollo<br>De
@@ -19,8 +20,10 @@
             </div>
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
                 <img class="rounded-lg " src="{% static 'logo/pb.jpg' %}" alt="image description">
-            </div>                
+            </div>  
+                          
         </div>
+
     </section>
 
     <section class="rounded-lg">
@@ -29,185 +32,200 @@
         </div>
     </section>
 
-    <section class="bg-white dark:bg-gray-900 rounded-lg shadow-lg mb-6 max-w-screen-xl mx-auto">
-        <div class="gap-8 items-center py-4 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-6 lg:px-4">
-            <img class="w-full rounded-lg" src="{% static 'logo/pb.jpg' %}" alt="dashboard image">
-            <div class="mt-2 md:mt-0">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Desarrollo de software personalizado</h2>
-                <p class="mb-4 font-light text-gray-500 md:text-lg dark:text-gray-400">
-                    Nos enfocamos en proporcionar soluciones de software personalizadas que se adapten a las necesidades únicas del cliente, desde aplicaciones web hasta software de automatización de procesos.
-                    Nos aseguramos de que cada solución que creamos sea única y personalizada para tu negocio, y que tenga en cuenta tus requisitos de seguridad, escalabilidad y mantenibilidad.
-                </p>
-            </div>
-        </div>
-    </section>
+    <div class="mx-0 md:mx-8px-0 md:px-8">
 
-    <section class="bg-white dark:bg-gray-900 rounded-lg shadow-lg mb-6 max-w-screen-xl mx-auto">
-        <div class="gap-8 items-center py-4 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-6 lg:px-4">
-            <img class="w-full rounded-lg" src="{% static 'logo/pb.jpg' %}" alt="dashboard image">
-            <div class="mt-2 md:mt-0">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Aplicaciones Web</h2>
-                <p class="mb-4 font-light text-gray-500 md:text-lg dark:text-gray-400">
-                    Diseñamos programas para ejecutarse en un navegador web, lo que permite que los usuarios accedan a ellas desde cualquier dispositivo con conexión a Internet.                
-                </p>
-            </div>
-        </div>
-          
-        <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
-            <h2 id="accordion-flush-heading-1">
-                <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
-                    <span>Accesibilidad</span>
-                    <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-            </h2>
-            <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
-                <div class="py-2 px-2">
-                    <p class="text-gray-500 dark:text-gray-400">
-                        Las aplicaciones web son accesibles desde cualquier dispositivo con conexión a Internet, lo que permite que los usuarios puedan utilizarlas desde cualquier lugar y en cualquier momento.
-                    </p>
-                </div>
-            </div>
-            <h2 id="accordion-flush-heading-2">
-                <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
-                    <span>Flexibilidad</span>
-                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-            </h2>
-            <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
-                <div class="p-2 ">
-                    <p class="text-gray-500 dark:text-gray-400">
-                        Las aplicaciones web son más flexibles que las aplicaciones de escritorio, lo que permite que se puedan adaptar a diferentes dispositivos y tamaños de pantalla.                    
-                    </p>
-                </div>
-            </div>
-            <h2 id="accordion-flush-heading-3">
-                <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
-                    <span>Ahorro de tiempo y dinero</span>
-                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-            </h2>
-            <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
-                <div class="p-2 ">
-                    <p class="text-gray-500 dark:text-gray-400">
-                        Al tener un solo sitio web o aplicación que sea compatible con cualquier dispositivo, se reduce la necesidad de desarrollar diferentes versiones para cada dispositivo. Esto reduce los costos y ahorra tiempo.Las aplicaciones web pueden ser desarrolladas una vez y ser utilizadas por múltiples usuarios, lo que ahorra tiempo y dinero en comparación con el desarrollo de aplicaciones de escritorio.
-                    </p>
-                </div>
-            </div>
-        </div>
-       
-    </section>
+        <section class="bg-white dark:bg-gray-900 rounded-lg shadow-lg mb-6 max-w-screen-xl mx-auto">
 
+            <div class="gap-x-2 items-center py-4 px-4 mx-auto max-w-screen-xl md:grid md:grid-cols-2 sm:py-6 lg:px-4">
 
-    <section class="bg-white dark:bg-gray-900 rounded-lg shadow-lg mb-6 max-w-screen-xl mx-auto">
-        <div class="gap-8 items-center py-4 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-6 lg:px-4">
-            <img class="w-full rounded-lg" src="{% static 'logo/pb.jpg' %}" alt="dashboard image">
-            <div class="mt-2 md:mt-0">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Diseño y Creación de Páginas Web</h2>
-                <p class="mb-4 font-light text-gray-500 md:text-lg dark:text-gray-400">
-                    En la actualidad, tener una presencia en línea es esencial para cualquier negocio. Una página web es la carta de presentación digital de una empresa, y es una herramienta clave para llegar a nuevos clientes y consolidar relaciones con los ya existentes. Es importante que una página web esté bien diseñada y sea fácil de usar, para lograr captar la atención del usuario y hacer que la experiencia sea agradable.            
-                </p>
-            </div>
-        </div>
-          
-        <div id="accordion-flush-1" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
-            <h2 id="accordion-flush-heading-4">
-                <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-4" aria-expanded="true" aria-controls="accordion-flush-body-4">
-                    <span>Mejora la imagen</span>
-                    <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-            </h2>
-            <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
-                <div class="py-2 px-2">
-                    <p class="text-gray-500 dark:text-gray-400">
-                        Una página web bien diseñada y profesional puede mejorar la imagen de la empresa y generar confianza en los usuarios.                   
+                <img class="w-full max-w-md mx-auto rounded-lg" src="{% static 'logo/pb.jpg' %}" alt="dashboard image">
+                <div class="mt-2 md:mt-0">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Desarrollo de software personalizado</h2>
+                    <p class="mb-4 font-light text-gray-500 md:text-lg dark:text-gray-400">
+                        Nos enfocamos en proporcionar soluciones de software personalizadas que se adapten a las necesidades únicas del cliente, desde aplicaciones web hasta software de automatización de procesos.
+                        Nos aseguramos de que cada solución que creamos sea única y personalizada para tu negocio, y que tenga en cuenta tus requisitos de seguridad, escalabilidad y mantenibilidad.
                     </p>
                 </div>
-            </div>
-            <h2 id="accordion-flush-heading-5">
-                <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-5" aria-expanded="false" aria-controls="accordion-flush-body-5">
-                    <span>Mejora la comunicación con los clientes</span>
-                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-            </h2>
-            <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
-                <div class="p-2 ">
-                    <p class="text-gray-500 dark:text-gray-400">
-                        Una página web puede ser una forma efectiva de comunicarse con los clientes, ya sea a través de formularios de contacto, chats en vivo o redes sociales.
-                    </p>                
-                </div>
-            </div>
-            <h2 id="accordion-flush-heading-6">
-                <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-6" aria-expanded="false" aria-controls="accordion-flush-body-6">
-                    <span>Mejora la experiencia del usuario</span>
-                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-            </h2>
-            <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-6">
-                <div class="p-2 ">
-                    <p class="text-gray-500 dark:text-gray-400">
-                        Una página web bien diseñada y fácil de usar puede mejorar la experiencia del usuario y generar una sensación positiva en el usuario.                    
-                    </p>
-                </div>
-            </div>
-        </div>
-       
-    </section>
 
-    
-    <section class="bg-white dark:bg-gray-900 rounded-lg shadow-lg mb-6 max-w-screen-xl mx-auto">
-        <div class="gap-8 items-center py-4 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-6 lg:px-4">
-            <img class="w-full rounded-lg" src="{% static 'logo/pb.jpg' %}" alt="dashboard image">
-            <div class="mt-2 md:mt-0">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Diseño responsive</h2>
-                <p class="mb-4 font-light text-gray-500 md:text-lg dark:text-gray-400">
-                    Hoy en día, cada vez son más los usuarios que acceden a internet a través de diferentes  dispositivos. Por esta razón, es fundamental que cualquier sitio web o aplicación que se desarrolle cuente con un diseño responsive. Esto garantiza que el contenido de la página se visualice de manera adecuada y que la experiencia del usuario sea óptima, independientemente del dispositivo que esté utilizando.                
-                </p>
             </div>
-        </div>
-          
-        <div id="accordion-flush-2" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
-            <h2 id="accordion-flush-heading-7">
-                <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-7" aria-expanded="true" aria-controls="accordion-flush-body-7">
-                    <span>Mejora la experiencia del usuario</span>
-                    <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-            </h2>
-            <div id="accordion-flush-body-7" class="hidden" aria-labelledby="accordion-flush-heading-7">
-                <div class="py-2 px-2">
-                    <p class="text-gray-500 dark:text-gray-400">
-                        Garantiza una experiencia de usuario más cómoda y fácil de usar. Al adaptarse a la pantalla del dispositivo que se está utilizando, el usuario no tendrá que realizar zoom para ver el contenido de la página, lo que aumenta la interacción y reduce la tasa de rebote.
-                        
+
+        </section>
+
+        <section class="bg-white dark:bg-gray-900 rounded-lg shadow-lg mb-6 max-w-screen-xl mx-auto">
+
+            <div class="items-center py-4 px-4 mx-auto max-w-screen-xl md:grid md:grid-cols-2 sm:py-6 lg:px-4">
+                <img class="w-full max-w-md mx-auto rounded-lg" src="{% static 'logo/pb.jpg' %}" alt="dashboard image">
+                <div class="mt-2 md:mt-0">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Aplicaciones Web</h2>
+                    <p class="mb-4 font-light text-gray-500 md:text-lg dark:text-gray-400">
+                        Diseñamos programas para ejecutarse en un navegador web, lo que permite que los usuarios accedan a ellas desde cualquier dispositivo con conexión a Internet.                
                     </p>
                 </div>
             </div>
-            <h2 id="accordion-flush-heading-8">
-                <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-8" aria-expanded="false" aria-controls="accordion-flush-body-8">
-                    <span>Reducción de costos</span>
-                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-            </h2>
-            <div id="accordion-flush-body-8" class="hidden" aria-labelledby="accordion-flush-heading-8">
-                <div class="p-2 ">
-                    <p class="text-gray-500 dark:text-gray-400">
-                        Al tener un solo sitio web o aplicación que sea compatible con cualquier dispositivo, se reduce la necesidad de desarrollar diferentes versiones para cada dispositivo. Esto reduce los costos y ahorra tiempo.    
+
+            <div class="px-4">
+            
+                <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+                    <h2 id="accordion-flush-heading-1">
+                        <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                            <span>Accesibilidad</span>
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                        <div class="py-2 px-2">
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Las aplicaciones web son accesibles desde cualquier dispositivo con conexión a Internet, lo que permite que los usuarios puedan utilizarlas desde cualquier lugar y en cualquier momento.
+                            </p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-2">
+                        <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                            <span>Flexibilidad</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                        <div class="p-2 ">
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Las aplicaciones web son más flexibles que las aplicaciones de escritorio, lo que permite que se puedan adaptar a diferentes dispositivos y tamaños de pantalla.                    
+                            </p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-3">
+                        <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                            <span>Ahorro de tiempo y dinero</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                        <div class="p-2 ">
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Al tener un solo sitio web o aplicación que sea compatible con cualquier dispositivo, se reduce la necesidad de desarrollar diferentes versiones para cada dispositivo. Esto reduce los costos y ahorra tiempo.Las aplicaciones web pueden ser desarrolladas una vez y ser utilizadas por múltiples usuarios, lo que ahorra tiempo y dinero en comparación con el desarrollo de aplicaciones de escritorio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        
+        </section>
+
+        <section class="bg-white dark:bg-gray-900 rounded-lg shadow-lg mb-6 max-w-screen-xl mx-auto">
+            <div class="items-center py-4 px-4 mx-auto max-w-screen-xl md:grid md:grid-cols-2 sm:py-6 lg:px-4">
+                <img class="w-full max-w-md mx-auto rounded-lg " src="{% static 'logo/pb.jpg' %}" alt="dashboard image">
+                <div class="mt-2 md:mt-0">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Diseño y Creación de Páginas Web</h2>
+                    <p class="mb-4 font-light text-gray-500 md:text-lg dark:text-gray-400">
+                        En la actualidad, tener una presencia en línea es esencial para cualquier negocio. Una página web es la carta de presentación digital de una empresa, y es una herramienta clave para llegar a nuevos clientes y consolidar relaciones con los ya existentes. Es importante que una página web esté bien diseñada y sea fácil de usar, para lograr captar la atención del usuario y hacer que la experiencia sea agradable.            
                     </p>
                 </div>
             </div>
-            <h2 id="accordion-flush-heading-9">
-                <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-9" aria-expanded="false" aria-controls="accordion-flush-body-9">
-                    <span>Mejora el posicionamiento en los motores de búsqueda</span>
-                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-            </h2>
-            <div id="accordion-flush-body-9" class="hidden" aria-labelledby="accordion-flush-heading-9">
-                <div class="p-2 ">
-                    <p class="text-gray-500 dark:text-gray-400">
-                        Los motores de búsqueda como Google, valoran positivamente los sitios web que tienen un diseño responsive. Si un sitio web no está adaptado para dispositivos móviles, puede disminuir su posición en los resultados de búsqueda.
-                    </p>
+            <div class="px-4">  
+                <div id="accordion-flush-1" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+                    <h2 id="accordion-flush-heading-4">
+                        <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-4" aria-expanded="true" aria-controls="accordion-flush-body-4">
+                            <span>Mejora la imagen</span>
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                        <div class="py-2 px-2">
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Una página web bien diseñada y profesional puede mejorar la imagen de la empresa y generar confianza en los usuarios.                   
+                            </p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-5">
+                        <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-5" aria-expanded="false" aria-controls="accordion-flush-body-5">
+                            <span>Mejora la comunicación con los clientes</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+                        <div class="p-2 ">
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Una página web puede ser una forma efectiva de comunicarse con los clientes, ya sea a través de formularios de contacto, chats en vivo o redes sociales.
+                            </p>                
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-6">
+                        <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-6" aria-expanded="false" aria-controls="accordion-flush-body-6">
+                            <span>Mejora la experiencia del usuario</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-6">
+                        <div class="p-2 ">
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Una página web bien diseñada y fácil de usar puede mejorar la experiencia del usuario y generar una sensación positiva en el usuario.                    
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-       
-    </section>
+        
+        </section>
+        
+        <section class="bg-white dark:bg-gray-900 rounded-lg shadow-lg mb-6 max-w-screen-xl mx-auto">
+
+            <div class="items-center py-4 px-4 mx-auto max-w-screen-xl md:grid md:grid-cols-2 sm:py-6 lg:px-4">
+                <img class="w-full max-w-md mx-auto rounded-lg" src="{% static 'logo/pb.jpg' %}" alt="dashboard image">
+                <div class="mt-2 md:mt-0 mx-auto">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Diseño responsive</h2>
+                    <p class="mb-4 font-light text-gray-500 md:text-lg dark:text-gray-400">
+                        Hoy en día, cada vez son más los usuarios que acceden a internet a través de diferentes  dispositivos. Por esta razón, es fundamental que cualquier sitio web o aplicación que se desarrolle cuente con un diseño responsive. Esto garantiza que el contenido de la página se visualice de manera adecuada y que la experiencia del usuario sea óptima, independientemente del dispositivo que esté utilizando.                
+                    </p>
+                </div>
+            </div> 
+
+            <div class="px-4">  
+                <div id="accordion-flush-2" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+                    <h2 id="accordion-flush-heading-7">
+                        <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-7" aria-expanded="true" aria-controls="accordion-flush-body-7">
+                            <span>Mejora la experiencia del usuario</span>
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-7" class="hidden" aria-labelledby="accordion-flush-heading-7">
+                        <div class="py-2 px-2">
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Garantiza una experiencia de usuario más cómoda y fácil de usar. Al adaptarse a la pantalla del dispositivo que se está utilizando, el usuario no tendrá que realizar zoom para ver el contenido de la página, lo que aumenta la interacción y reduce la tasa de rebote.
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-8">
+                        <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-8" aria-expanded="false" aria-controls="accordion-flush-body-8">
+                            <span>Reducción de costos</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-8" class="hidden" aria-labelledby="accordion-flush-heading-8">
+                        <div class="p-2 ">
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Al tener un solo sitio web o aplicación que sea compatible con cualquier dispositivo, se reduce la necesidad de desarrollar diferentes versiones para cada dispositivo. Esto reduce los costos y ahorra tiempo.    
+                            </p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-9">
+                        <button type="button" class="flex items-center justify-between w-full py-2 px-2 font-medium text-left text-gray-500 border-t border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-9" aria-expanded="false" aria-controls="accordion-flush-body-9">
+                            <span>Mejora el posicionamiento en los motores de búsqueda</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-9" class="hidden" aria-labelledby="accordion-flush-heading-9">
+                        <div class="p-2 ">
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Los motores de búsqueda como Google, valoran positivamente los sitios web que tienen un diseño responsive. Si un sitio web no está adaptado para dispositivos móviles, puede disminuir su posición en los resultados de búsqueda.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+    </div>    
 
 {% endblock content %}
