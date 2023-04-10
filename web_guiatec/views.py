@@ -15,3 +15,8 @@ class TemplateTechnicalSupport(TemplateView):
 class TemplateSoftware(TemplateView):
 
     template_name = "software.html"
+
+
+class TemplateContact(TemplateView):
+
+    template_name = "contact.html"
