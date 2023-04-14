@@ -37,7 +37,7 @@ class TemplateContactView(FormView):
         subject = self.request.POST['subject']
         content = self.request.POST['content']
 
-        if full_name and email and number and object and text_content :
+        if full_name and email and number and object and content :
 
             from_email = settings.EMAIL_HOST_USER
             text_content = "This is an important message."
