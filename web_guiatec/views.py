@@ -41,7 +41,7 @@ class TemplateContactView(FormView):
 
             from_email = settings.EMAIL_HOST_USER
             text_content = "This is an important message."
-            html_content = "<p>{} <br> Asunto:{} <br> <strong>email {} </strong><br> Mensaje:<br> {}.</p>".format(full_name, subject, email, content)
+            html_content = "<p>Nombre: {} <br> Asunto: {} <br> Telefono: {} <br>Email:<strong> {} </strong><br> Mensaje:<br> {}.</p>".format(full_name, subject, number, email, content)
             msg = EmailMultiAlternatives('Contac WEb Guiatec {}'.format(full_name), text_content, from_email, [from_email])
             msg.attach_alternative(html_content, "text/html")
             msg.send()
