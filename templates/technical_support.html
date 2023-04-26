@@ -2,8 +2,8 @@
 {% load static %}
 
 {% block content %}
-  
-    <section class="rounded-lg shadow-lg mb-4">
+
+    <section class="rounded-lg mb-4 shadow-lg shadow-blue-500/50">
         <div class="grid max-w-screen-xl px-4 py-2 mx-auto mb-4 lg:gap-8 xl:gap-0 lg:py-4 lg:grid-cols-12">
             <div class="mx-auto place-self-center lg:col-span-7 ">
                 <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl dark:text-white text-center">Mantenimiento <br>De
@@ -23,21 +23,21 @@
         </div>
     </section>
 
-    <div class="mx-0 md:mx-8px-0 md:px-8">
+    <div class="mx-0 md:mx-8 px-0 md:px-8 rounded-lg">
 
         <section class="rounded-lg py-8">
             <section class=" rounded-lg px-0 md:px-8 mx-0 md:mx-4">
         
-            <div class=" w-full bg-green-600 mx-auto rounded-lg py-2 sm:py-4">
-                
-                <p class="text-sm md:text-xl font-normal text-white text-center">Ofrecemos servicios de reparación de computadoras para solucionar problemas de hardware y software.</p>
-                
-            </div>
+                <div class=" w-full bg-green-600 mx-auto rounded-lg py-2 sm:py-4">
+                    
+                    <p class="text-sm md:text-xl font-normal text-white text-center">Ofrecemos servicios de reparación de computadoras para solucionar problemas de hardware y software.</p>
+                    
+                </div>
             </section> 
         
             <div class="grid md:grid-cols-2 mx-auto pt-8 mb-4 gap-4">   
             
-                <div class="max-w-md mx-auto bg-white border border-green-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-600">
+                <div class="max-w-md mx-auto bg-white border border-green-200 rounded-lg shadow-lg shadow-cyan-500/50 dark:bg-gray-800 dark:border-gray-600">
                     
                     <img class="rounded-t-lg" src="{% static 'logo/tech.webp' %}" alt="" />
                     
@@ -75,7 +75,7 @@
                     </div>
                 </div>
 
-                <div class="max-w-md mx-auto bg-white border border-green-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-600">
+                <div class="max-w-md mx-auto bg-white border border-green-200 rounded-lg shadow-lg shadow-cyan-500/50 dark:bg-gray-800 dark:border-gray-600">
                     
                     <img class="rounded-t-lg" src="{% static 'logo/soporte_software.webp' %}" alt="" />
                     
@@ -117,19 +117,21 @@
         
         </section> 
 
-        <section class="py-8 border-b border-green-600">
-            <section class=" rounded-lg px-0 md:px-8 mx-0 md:mx-4">
+        <section class="border-b-2 border-yellow-400 ">
+
+            <section class="rounded-lg px-0 md:px-8 mx-0 md:mx-4">
         
-            <div class=" w-full bg-green-600 mx-auto rounded-lg py-2 sm:py-4">
-                
-                <p class="text-sm md:text-xl font-normal text-white text-center">Instalación, mantenimiento y reparación de redes y CCTV.</p>
-                
-            </div>
+                <div class="w-full bg-green-600 mx-auto rounded-lg py-2 sm:py-4">
+                    
+                    <p class="text-sm md:text-xl font-normal text-white text-center">Instalación, mantenimiento y reparación de redes y CCTV.</p>
+                    
+                </div>
+
             </section> 
         
-            <div class="grid md:grid-cols-2 mx-auto pt-4 mb-8 gap-4">   
+            <div class="grid md:grid-cols-2 mx-auto mt-4 mb-8 gap-4 rounded-lg ">   
             
-                <div class="max-w-md mx-auto bg-white border border-green-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-600">
+                <div class="max-w-md mx-auto bg-white border border-green-200 rounded-lg shadow-lg shadow-red-500/50 dark:bg-gray-800 dark:border-gray-600 ">
                     
                     <img class="rounded-t-lg" src="{% static 'logo/redes.webp' %}" alt="" />
                     
@@ -159,7 +161,7 @@
                     </div>
                 </div>
 
-                <div class="max-w-md mx-auto bg-white border border-green-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-600">
+                <div class="max-w-md mx-auto bg-white border border-green-200 rounded-lg shadow-lg shadow-red-500/50 dark:bg-gray-800 dark:border-gray-600">
                     
                     <img class="rounded-t-lg" src="{% static 'logo/CCTV.webp' %}" alt="" />
                     
@@ -188,20 +190,22 @@
                     
                     </div>
                 </div>
+
             </div>
                     
         </section> 
 
-        <section class="rounded-lg pt-4 px-0 md:px-8">  
+        <section class="rounded-lg pt-4 px-0 md:px-8 shadow-lg">  
         
             <div class="bg-gray-50 dark:bg-gray-800">
             
-            <div class="bg-gray-50 dark:bg-gray-800 px-4 py-2">
-                <p class="text-sm md:text-lg font-normal text-gray-500 dark:text-gray-200 text-justify">Nos apasiona la tecnología y estamos comprometidos a brindar soluciones innovadoras para mejorar la eficiencia de su negocio. Ofrecemos una amplia gama de servicios, desde el desarrollo de páginas web y aplicaciones hasta el soporte técnico en computadoras, redes y CCTV. Trabajamos en estrecha colaboración con nuestros clientes para entender sus necesidades y brindarles soluciones que se ajusten a sus objetivos y presupuesto.</p>
+                <div class="bg-gray-50 dark:bg-gray-800 px-4 py-2">
+                    <p class="text-sm md:text-lg font-normal text-gray-500 dark:text-gray-200 text-justify">Nos apasiona la tecnología y estamos comprometidos a brindar soluciones innovadoras para mejorar la eficiencia de su negocio. Ofrecemos una amplia gama de servicios, desde el desarrollo de páginas web y aplicaciones hasta el soporte técnico en computadoras, redes y CCTV. Trabajamos en estrecha colaboración con nuestros clientes para entender sus necesidades y brindarles soluciones que se ajusten a sus objetivos y presupuesto.</p>
+                </div>
             </div>
-            </div>
+
         </section>
 
-    </div>
+    </div>  
 
 {% endblock content %}
