@@ -1,10 +1,7 @@
-from django.views.generic import TemplateView, View, FormView
+from django.views.generic import TemplateView, FormView
 from django.core.mail import EmailMultiAlternatives
 from django.shortcuts import render
 from django.conf import settings
-
-
-
 
 
 class TemplateIndex(TemplateView):
@@ -23,7 +20,7 @@ class TemplateSoftware(TemplateView):
 
 
 class TemplateContactView(FormView):
-
+    """view to send form mail"""
            
     def get(self, request, *args, **kwargs):
         
