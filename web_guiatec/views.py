@@ -1,7 +1,9 @@
-from django.views.generic import TemplateView, FormView
+from django.views.generic import TemplateView, View, FormView
 from django.core.mail import EmailMultiAlternatives
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from django.conf import settings
+from io import BytesIO
+import qrcode
 
 
 class TemplateIndex(TemplateView):
@@ -19,7 +21,7 @@ class TemplateSoftware(TemplateView):
     template_name = "software.html"
 
 
-class TemplateContactView(FormView):
+class TemplateContactView(View):
     """view to send form mail"""
            
     def get(self, request, *args, **kwargs):
@@ -46,3 +48,30 @@ class TemplateContactView(FormView):
             return render (request, 'contact.html', context={'form_valid':True})
         
         return render (request, 'contact.html', context={})
+
+
+class TemplateQRView(FormView):
+    """view to generate QR"""
+           
+    def get(self, request, *args, **kwargs):
+        
+        return render (request, 'generateqr.html', context={})
+
+    def post(self, request, *args, **kwargs):
+
+        name_qr = self.request.POST['name_qr']
+        text_qr = self.request.POST['text_qr']        
+
+        if name_qr and text_qr :
+            
+            img = qrcode.make(text_qr)   
+            buf = BytesIO()	
+            img.save(buf)
+            image_stream = buf.getvalue()
+            response = HttpResponse (image_stream, 'generateqr.html', headers={
+                'content_type':"image/png",
+                'Content-Disposition':'attachment; filename="{}.jpeg"'.format(name_qr),'valid':'afjhskasbf'}
+                )                            
+            return response
+        
+        return render (request, 'generateqr.html', context={})
